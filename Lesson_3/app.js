@@ -88,11 +88,12 @@ for (var i = 1; i <= 12; i++) {
 }
 
 function FormatPhoneNumber(phoneNumber) {
-  var countryCode = phoneNumber.substring(0, 4);
-  var operatorCode = phoneNumber.substring(4, 7);
-  var phonePart1 = phoneNumber.substring(7, 9);
-  var phonePart2 = phoneNumber.substring(9, 11);
-  var phonePart3 = phoneNumber.substring(11, 13);
+  //если номер телефона +996999112233
+  var countryCode = phoneNumber.substring(0, 4); //+996
+  var operatorCode = phoneNumber.substring(4, 7); //999
+  var phonePart1 = phoneNumber.substring(7, 9); //11
+  var phonePart2 = phoneNumber.substring(9, 11); //22
+  var phonePart3 = phoneNumber.substring(11, 13); //33
   return (
     countryCode +
     " " +
@@ -162,3 +163,5 @@ var num = 5;
 
 console.log("NUM =>", num++);
 console.log("NUM =>", num);
+
+

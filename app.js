@@ -7,7 +7,7 @@
 
 // document.body.style.backgroundColor = "blue";
 
-console.log(chroma);
+main();
 
 function getRandomInRange(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
@@ -26,9 +26,7 @@ function generateColor() {
 var columnNode = document.querySelector(".col");
 console.log(columnNode);
 
-document.body.addEventListener("keydown", function (event) {
-  event.preventDefault();
-  if (event.code.toLowerCase() !== "space") return;
+function main() {
   var columnNodes = document.querySelectorAll(".col");
   columnNodes.forEach(function (columnNode) {
     var iconNode = columnNode.querySelector("i");
@@ -40,6 +38,12 @@ document.body.addEventListener("keydown", function (event) {
     colorTextNode.style.color = lumValue > 0.5 ? "black" : "white";
     colorTextNode.textContent = genColor;
   });
+}
+
+document.body.addEventListener("keydown", function (event) {
+  event.preventDefault();
+  if (event.code.toLowerCase() !== "space") return;
+  main();
 });
 
 document.body.addEventListener("click", function (event) {

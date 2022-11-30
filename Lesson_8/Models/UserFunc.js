@@ -1,6 +1,4 @@
-function UserEs5(login, password) {
+export default function User(login, password) {
   this.Login = login;
   this.Password = password;
 }
-
-export default UserEs5;

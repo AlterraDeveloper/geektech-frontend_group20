@@ -299,7 +299,7 @@ var ancestry = [{
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   "default": () => (/* binding */ User)
 /* harmony export */ });
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -307,15 +307,15 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
 function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
-var UserEs6 = /*#__PURE__*/function () {
-  function UserEs6(login, password) {
+var User = /*#__PURE__*/function () {
+  function User(login, password) {
     var username = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : "";
-    _classCallCheck(this, UserEs6);
+    _classCallCheck(this, User);
     this.Login = login;
     this.Password = password;
     this.UserName = username;
   }
-  _createClass(UserEs6, [{
+  _createClass(User, [{
     key: "generateLogin",
     value: function generateLogin() {
       // Eugene Kiselev -> ekiselev
@@ -325,9 +325,9 @@ var UserEs6 = /*#__PURE__*/function () {
       return "".concat(usernameList[0][0], ".").concat(usernameList[1]);
     }
   }]);
-  return UserEs6;
+  return User;
 }();
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (UserEs6);
+
 
 /***/ }),
 
@@ -340,13 +340,12 @@ var UserEs6 = /*#__PURE__*/function () {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   "default": () => (/* binding */ User)
 /* harmony export */ });
-function UserEs5(login, password) {
+function User(login, password) {
   this.Login = login;
   this.Password = password;
 }
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (UserEs5);
 
 /***/ }),
 

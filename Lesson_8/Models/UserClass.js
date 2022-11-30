@@ -1,4 +1,4 @@
-class UserEs6 {
+export default class User {
   constructor(login, password, username = "") {
     this.Login = login;
     this.Password = password;
@@ -13,5 +13,3 @@ class UserEs6 {
     return `${usernameList[0][0]}.${usernameList[1]}`;
   }
 }
-
-export default UserEs6;
